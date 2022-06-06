@@ -11,7 +11,7 @@ clusters:
       branch: HEAD
 
 - name: castai
-  destinationServer: k8s.cluster-1-castai-demo-c1f2cde9.onmulti.cloud:6443
+  destinationServer: https://k8s.cluster-1-castai-demo-c1f2cde9.onmulti.cloud:6443
   apps:
     prometheus:
       enabled: true
