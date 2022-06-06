@@ -10,12 +10,12 @@ clusters:
       enabled: true
       branch: HEAD
 
-#- name: gke
-#  destinationServer: #INSERT MASTERIP HERE
-#  apps:
-#    prometheus:
-#      enabled: true
-#      version: "9.7.4"
-#    sampleApp:
-#      enabled: true
-#      branch: HEAD
+- name: castai
+  destinationServer: k8s.cluster-1-castai-demo-c1f2cde9.onmulti.cloud:6443
+  apps:
+    prometheus:
+      enabled: true
+      version: "9.7.4"
+    sampleApp:
+      enabled: true
+      branch: HEAD
