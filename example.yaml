@@ -40,7 +40,7 @@ services:
   retry-worker:
     container:
       image:
-        tag: v1.0.5-alpha
+        tag: v9.9.9
   retry-api:
     container:
       image:
