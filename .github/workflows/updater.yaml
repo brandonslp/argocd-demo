@@ -15,8 +15,7 @@ jobs:
         SEARCH: ${{ github.event.client_payload.search }}
         NEW_VERSION: ${{ github.event.client_payload.newVersion }}
       run: |
-        echo "SEARCH: $SEARCH"
-        echo "NEW_VERSION: $NEW_VERSION"
-
+        bash ./updater.sh $SEARCH $NEW_VERSION
+        echo ./example.yaml
 
 
