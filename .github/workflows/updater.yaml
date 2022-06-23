@@ -1,0 +1,22 @@
+name: Omnix Infra Updater
+
+on:
+  repository_dispatch:
+    types: [update]
+
+jobs:
+  updater:
+    name: Update Image Version
+    runs-on: ubuntu-latest
+    steps:
+     - 
+      name: Get Params 
+      env:
+        SEARCH: ${{ github.event.client_payload.search }}
+        NEW_VERSION: ${{ github.event.client_payload.newVersion }}
+      run: |
+        echo "SEARCH: $SEARCH"
+        echo "NEW_VERSION: $NEW_VERSION"
+
+
+

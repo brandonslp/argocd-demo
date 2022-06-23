@@ -1,0 +1,83 @@
+environments:
+  - dev
+services:
+  routes-loader:
+    container:
+      image:
+        tag: v1.1.0-alpha
+  couriers-loader:
+    container:
+      image:
+        tag: v1.1.0-alpha
+  coverages-loader:
+    container:
+      image:
+        tag: v1.1.0-alpha
+  oitm-event-buffer:
+    container:
+      image:
+        tag: v1.1.7-alpha
+  inventory-loader:
+    container:
+      image:
+        tag: v1.0.6-alpha
+  monstache-retry:
+    container:
+      image:
+        tag: v0.0.2-alpha
+  monstache-olm:
+    container:
+      image:
+        tag: v0.0.2-alpha
+  monstache-oom:
+    container:
+      image:
+        tag: v0.0.2-alpha
+  monstache-oim:
+    container:
+      image:
+        tag: v0.0.2-alpha
+  retry-worker:
+    container:
+      image:
+        tag: v1.0.5-alpha
+  retry-api:
+    container:
+      image:
+        tag: v0.1.0-alpha
+  osm:
+    container:
+      image:
+        tag: v1.1.4-alpha
+  oim:
+    container:
+      image:
+        tag: v1.3.2-alpha
+  oom:
+    container:
+      image:
+        tag: v1.5.1-alpha
+  olm:
+    container:
+      image:
+        tag: v1.3.2-alpha
+  ocl:
+    container:
+      image:
+        tag: v1.1.8-alpha
+  ofu:
+    container:
+      image:
+        tag: v1.0.5-alpha
+  osrm:
+    container:
+      image:
+        tag: v1.0.4-alpha
+  simo:
+    container:
+      image:
+        tag: v1.0.4-alpha
+  webapp:
+    container:
+      image:
+        tag: v1.0.2
