@@ -13,12 +13,19 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
      - 
-      name: Get Params 
+      name: Replace version
       env:
         SEARCH: ${{ github.event.client_payload.search }}
         NEW_VERSION: ${{ github.event.client_payload.newVersion }}
       run: |
         bash ./updater.sh $SEARCH $NEW_VERSION
         cat ./example.yaml
+     - 
+      name: Commit changes
+      run: |
+          git config --global user.name 'Brandonslp'
+          git config --global user.email 'brandonslp.bl@gmail.com'
+          git commit -am "Automated update"
+          git push
 
 
