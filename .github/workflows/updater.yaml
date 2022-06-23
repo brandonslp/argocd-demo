@@ -16,6 +16,6 @@ jobs:
         NEW_VERSION: ${{ github.event.client_payload.newVersion }}
       run: |
         bash ./updater.sh $SEARCH $NEW_VERSION
-        echo ./example.yaml
+        cat ./example.yaml
 
 
