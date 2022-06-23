@@ -3,7 +3,7 @@
 SEARCH=$1
 NEW_VERSION=$2
 CURRENT_VERSION=$(cat ./example.yaml  | grep -A3 ${SEARCH} | grep tag: | awk '{ print $(NF - 0); }')
-echo "Replace $CURRENT_VERSION by $NEW_VERSION "
+echo "Replace $SEARCH version: $CURRENT_VERSION by $NEW_VERSION "
 TEXT="container:
       image:
         tag:"
